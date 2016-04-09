@@ -2,11 +2,21 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 	line-height: 1.5;
-	cursor: default;
+}
+/*-- Fix CSS --*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
 }
 
-.wrapper {
-	max-width: 1280px;
+/*-- Fix CSS --*/
+
+.container {
+	max-width: 950px;
 	margin: auto;
 }
 
@@ -120,24 +130,33 @@ p {
 	box-shadow: 0 0 5px rgba(0,0,0,.75);
 }
 
-.touts {
+.search {
 	background: #EEE;
-	background: white;
 	overflow: hidden;
 	padding: 2% 0;
 }
-.tout {
+.search {
 	float: left;
 	width: 27.3333%;
 	padding: 2% 3%;
 	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
 }
-.tout:last-child {
+.search p{
+	min-height:130px;
+	display:block;
+}
+.search:last-child {
 	box-shadow: none;
 }
-.tout .button {
+.search .button {
 	background: #C6C6C6;
 }
+
+
+
+
+
+
 
 .profiles {
 	background: #C6C6C6;
